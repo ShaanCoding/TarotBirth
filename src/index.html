@@ -6,31 +6,39 @@
         <title>Tarot Birth Card Calculator</title>
         <meta name="description" content="">
         <link rel="stylesheet" href="styles/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
     </head>
     <body>
-        <h1>Birth Card Calculator</h1>
-        <p>
-            
-        </p>
-
-        <div class="row">
-            <img src="images/cards/death.jpg" id="leftCard">
-            <img src="" id="middleCard">
-            <img src="images/cards/death.jpg" id="rightCard">
+        <div class="background">
+            <div class="row">
+                <h1>Tarot Birth Card Calculator</h1>
+            </div>
+    
+            <div class="row">
+                <p>
+                    To a person's Tarot Birth Cards, simply enter their date of birth below, and press the "Calculate" button.
+                </p>
+            </div>
+    
+            <div class="row">
+                <img src="images/cards/death.jpg" id="leftCard">
+                <img src="" id="middleCard">
+                <img src="images/cards/death.jpg" id="rightCard">
+            </div>
+    
+            <div class="row">
+                Day:
+                <input type="number" id="day">
+                Month:
+                <input type="number" id="month">
+                Year:
+                <input type="number" id="year">
+            </div>
+    
+            <div class="row">
+                <button onclick="calculateBirthCard()">Create</button>
+            </div>
         </div>
-
-        <div class="row">
-            Month:
-            <input type="number" id="month">
-
-            Day:
-            <input type="number" id="day">
-
-            Year:
-            <input type="number" id="year">
-        </div>
-
-        <button onclick="calculateBirthCard()">Create</button>
 
         <script src="scripts/main.js"></script>
     </body>

@@ -23,6 +23,8 @@ imagesArray[19] = "images/cards/theSun.jpg";
 imagesArray[20] = "images/cards/judgement.jpg";
 imagesArray[21] = "images/cards/theWorld.jpg";
 
+document.getElementById('middleCard').style.display = 'none';
+
 var i = 0;
 
 for(i = 0; i < imagesArray.length; i++) {
@@ -48,9 +50,7 @@ function calculateBirthCard() {
 }
 
 function swap(tarotNumber) {
-    document.getElementById('middleCard').src = "";
-
-    console.log(tarotNumber);
+    document.getElementById('middleCard').style.display = 'none';
 
     switch(parseInt(tarotNumber)) {
         case 1:
@@ -126,6 +126,7 @@ function swap(tarotNumber) {
             document.getElementById('rightCard').src = imagesArray[9];
             break;
         case 19:
+            document.getElementById('middleCard').style.display = 'inline';
             document.getElementById('leftCard').src = imagesArray[19];
             document.getElementById('middleCard').src = imagesArray[1];
             document.getElementById('rightCard').src = imagesArray[10];
